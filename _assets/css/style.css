@@ -1,0 +1,129 @@
+/* ===========================
+GENERAL STYLES
+=========================== */
+html{
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  color: #454545;
+  font-size: 2.4rem;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+figure{
+  margin: 0;
+}
+
+/* ===========================
+LAYOUT CLASSES
+=========================== */
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text-large{
+  font-size: 2.8rem;
+}
+
+
+/* ===========================
+GIAU PASS SECTION
+=========================== */
+#giaupass{
+  position: relative;
+
+  color: #fff;
+}
+
+#giaupass .bgInitial,
+#giaupass .bgBlur{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#giaupass .bgInitial{
+  background-image: url("../img/mc_giaupass.jpg");
+  z-index: 1;
+}
+
+#giaupass .bgBlur{
+  background-image: url("../img/mc_giaupass_blur.jpg");
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity .75s ease;
+  transition: opacity .75s ease;
+}
+
+#giaupass .bgBlur.active{
+  opacity: .95;
+}
+
+#giaupassIntro,
+#giaupassDescription{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+#giaupassIntro h1{
+  text-shadow: 0px 1px 3px rgba(200, 70, 30, .55);
+  color: #FFF;
+  font-size: 6.4rem;
+  line-height: 1;
+
+}
+#giaupassIntro{
+  -webkit-transition: opacity .75s ease;
+  transition: opacity .75s ease;
+}
+
+#giaupassIntro.scroll{
+  opacity: 0;
+}
+
+#giaupassIntro h1,
+#giaupassIntro .text-large{
+  width: 66%;
+}
+
+#giaupassDescription .text-large{
+  font-weight: 700;
+}
+
+
+/* ===========================
+GIAU PASS CSS SECTION
+=========================== */
+#giauPassCSS{
+  padding: 10rem 0;
+  position: relative;
+  z-index: 4;
+
+  background: #fff;
+}
+
+.laptop{
+  margin-top: 10rem;
+}
