@@ -30,13 +30,42 @@ figure{
 LAYOUT CLASSES
 =========================== */
 .container{
-  width: 100%;
+  width: 95%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .text-large{
   font-size: 2.8rem;
+}
+
+a.btn{
+  background: #345b88;
+  background: -webkit-gradient(linear, left top, left bottom, from(#43729b), to(#26415f));
+  background: linear-gradient(#43729b, #26415f);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+}
+
+a.btn:hover{
+  background: #345b88;
+  background: -webkit-gradient(linear, left top, left bottom, from(#477aa6), to(#2b496b));
+  background: linear-gradient(#477aa6, #2b496b);
+}
+
+@media(max-width: 375px){
+  h2{
+    font-size: 3.2rem;
+  }
+
+  .text-large{
+    font-size: 2rem;
+  }
 }
 
 
@@ -51,6 +80,7 @@ GIAU PASS SECTION
 
 #giaupass .bgInitial,
 #giaupass .bgBlur{
+  background-size: cover;
   position: fixed;
   top: 0;
   width: 100%;
@@ -92,8 +122,21 @@ GIAU PASS SECTION
   color: #FFF;
   font-size: 6.4rem;
   line-height: 1;
-
 }
+
+@media(max-width: 425px){
+  #giaupassIntro h1{
+    font-size: 4.8rem;
+  }
+}
+
+@media(max-width: 375px){
+  #giaupassIntro h1{
+    font-size: 3.6rem;
+  }
+}
+
+
 #giaupassIntro{
   -webkit-transition: opacity .75s ease;
   transition: opacity .75s ease;
@@ -106,6 +149,13 @@ GIAU PASS SECTION
 #giaupassIntro h1,
 #giaupassIntro .text-large{
   width: 66%;
+}
+
+@media(max-width: 768px){
+  #giaupassIntro h1,
+  #giaupassIntro .text-large{
+    width: 100%;
+  }
 }
 
 #giaupassDescription .text-large{
@@ -126,4 +176,57 @@ GIAU PASS CSS SECTION
 
 .laptop{
   margin-top: 10rem;
+}
+
+
+/* ===========================
+GIAU PASS ENDER
+=========================== */
+#giauPassEnder{
+  background-image: url("../img/mc_giaupass.jpg");
+  background-size: cover;
+  border: 2rem solid #fff;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  z-index: 4;
+}
+
+#giauPassEnder h1{
+  text-shadow: 0px 1px 3px rgba(200, 70, 30, .55);
+  color: #FFF;
+  font-size: 6.4rem;
+  line-height: 1;
+}
+
+#giauPassEnder h1,
+#giauPassEnder .text-large{
+  width: 66%;
+}
+
+@media(max-width: 768px){
+  #giauPassEnder h1,
+  #giauPassEnder .text-large{
+    width: 100%;
+  }
+}
+
+@media(max-width: 425px){
+  #giauPassEnder h1{
+    font-size: 4.8rem;
+  }
+}
+
+@media(max-width: 375px){
+  #giauPassEnder h1{
+    font-size: 3.6rem;
+  }
 }
